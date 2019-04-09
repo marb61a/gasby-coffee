@@ -11,7 +11,7 @@ export default function Contact() {
             action=""
             method="POST"
           >
-            {/* name */}
+            {/* Name */}
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input
@@ -19,10 +19,41 @@ export default function Contact() {
                 className="form-control"
                 name="name"
                 id="name"
-                placeholder="john smith"
+                placeholder="joe bloggs"
               />
             </div>
             
+            {/* Email */}
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input
+                type="text"
+                className="form-control"
+                name="email"
+                id="email"
+                placeholder="email@email"
+              />
+            </div>
+
+            {/* description */}
+            <div className="form-group">
+              <label htmlFor="description">Description</label>
+              <textarea
+                name="description"
+                id="description"
+                className="form-control"
+                rows="5"
+                placeholder="your description here..."
+              />
+            </div>
+
+            {/* Submit */}
+            <button 
+              type="submit"
+              className="btn btn-yellow btn-block text-capitalize mt-5"
+            >
+              Submit
+            </button>
           </form>
         </div>
       </div>
